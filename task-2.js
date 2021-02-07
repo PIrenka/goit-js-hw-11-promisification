@@ -8,16 +8,6 @@ const users = [
   { name: 'Lux', active: false },
 ];
 
-// const toggleUserState = (allUsers, userName) => {
-//   const promise = new Promise((resolve, reject) => {
-//     const updatedUsers = allUsers.map(user =>
-//       user.name === userName ? { ...user, active: !user.active } : user,
-//     );
-//     resolve(updatedUsers);
-//   });
-//   return promise;
-// };
-
 const toggleUserState = (allUsers, userName) => {
   const updatedUsers = allUsers.map(user =>
     user.name === userName ? { ...user, active: !user.active } : user,
